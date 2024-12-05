@@ -50,7 +50,7 @@ def predict_injury(axial_image, coronal_image, sagittal_image, axial_model, coro
     prediction_probabilities = fusion_model.predict_proba(combined_features)[0]
     return prediction, prediction_probabilities
 def main():
-    st.title("MRI Injury Detection Dashboard")
+    st.title("KNEE INJURY CLASSIFICATION")
     st.write("Upload three MRI slices (Axial, Coronal, Sagittal) to predict the type of injury.")
     axial_file = st.file_uploader("Upload Axial Plane (.npy)", type=["npy"])
     coronal_file = st.file_uploader("Upload Coronal Plane (.npy)", type=["npy"])
