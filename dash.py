@@ -50,7 +50,11 @@ def predict_injury(axial_image, coronal_image, sagittal_image, axial_model, coro
     prediction_probabilities = fusion_model.predict_proba(combined_features)[0]
     return prediction, prediction_probabilities
 def main():
+<<<<<<< HEAD
     st.title("MRI Injury Detection Dashboard")
+=======
+    st.title("KNEE INJURY CLASSIFICATION")
+>>>>>>> 3b33a7f75f722126293040c4fc2e64914c7179ae
     st.write("Upload three MRI slices (Axial, Coronal, Sagittal) to predict the type of injury.")
     axial_file = st.file_uploader("Upload Axial Plane (.npy)", type=["npy"])
     coronal_file = st.file_uploader("Upload Coronal Plane (.npy)", type=["npy"])
@@ -73,4 +77,8 @@ def main():
             st.write("Meniscus Tear detected. Rest and physical therapy may be required.")
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     main()
+=======
+    main()
+>>>>>>> 3b33a7f75f722126293040c4fc2e64914c7179ae
